@@ -1,0 +1,55 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+ int n;
+ char C;
+ cin >> C;
+ cin >> n;
+ switch(C){
+ case 'N':
+ switch(n) {
+ case 1: cout << "S ";
+ break;
+ case 0: cout << "N ";
+ break;
+  case -1: cout << "W ";
+ break;
+ }
+ break;
+ case 'W':
+  switch(n){
+ case 1: cout << "N ";
+ break;
+ case 0: cout << "W ";
+ break;
+  case -1: cout << "E ";
+ break;
+  }
+  break;
+  case 'E':
+   switch(n){
+ case 1: cout << "W ";
+ break;
+ case 0: cout << "E ";
+ break;
+  case -1: cout << "S ";
+ break;
+   }
+   break;
+   case 'S':
+    switch(n){
+ case 1: cout << "E ";
+ break;
+ case 0: cout << "S ";
+ break;
+  case -1: cout << "N ";
+ break;
+    }
+    break;
+ }
+cin.get();
+return 0;
+}
